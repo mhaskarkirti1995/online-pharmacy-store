@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+.ratting-wrapper
+{
+	direction:rtl;
+}
+.ratting-wrapper input
+{
+	display:none;
+	cursor:pointer;
+}
+.ratting-wrapper label
+{
+	display:inline-block;
+	width: 43px;
+	position: relative;
+	cursor: pointer;
+}
+
+.ratting-wrapper label:before
+{
+	content: "\2605";
+	position: absolute;
+	font-size: 50px;
+	display: inline-block;
+	top : 0px;
+	left:0;
+}
+.ratting-wrapper label:after 
+{
+	content: "\2605";
+	position: absolute;
+	font-size: 50px;
+	display: inline-block;
+	top : 0;
+	left:0;
+	color: yellow;
+	opacity: 0;
+}
+
+.ratting-wrapper label:hover:after,
+.ratting-wrapper label:hover ~ label:after,
+.ratting-wrapper input:checked ~ label:after 
+{
+	opacity: 1;
+}
+ 
+ 
+
